@@ -1,8 +1,8 @@
 import React from 'react';
+import NotFound from './Components/NotFound';
 
 const App = () => {
-    console.log("heya");
-    return <div>App</div>;
+    return <NotFound />
 }
 
 export default App;

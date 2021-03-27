@@ -1,8 +1,8 @@
 import React from 'react';
-import NotFound from './Components/NotFound';
+import NavigationPage from './Components/NavigationPage';
 
 const App = () => {
-    return <NotFound />
+    return <NavigationPage />
 }
 
 export default App;

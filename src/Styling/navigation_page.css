@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navigation__bar {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigation__bar-pokemons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #990000;
+  background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  transition: all 1s;
+}
+
+.navigation__bar-digimons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  transition: all 1s;
+}
+
+.navigation__bar-digimons-image,
+.navigation__bar-pokemons-image {
+  height: 500px;
+  width: auto;
+}
+.navigation__bar-pokemons-text,
+.navigation__bar-digimons-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navigation__bar-digimons-text {
+  color: lightskyblue;
+}
+
+.navigation__bar-pokemons-text {
+  color: #feae96;
+}
+
+.navigation__bar-pokemons:hover {
+  width: 70%;
+}
+.navigation__bar-pokemons:hover .navigation__bar-pokemons-image {
+  animation: grow 2s forwards;
+  background: radial-gradient(closest-side, #fff, #99000000);
+}
+.navigation__bar-pokemons:hover .navigation__bar-pokemons-text {
+  margin-bottom: 30px;
+}
+.navigation__bar-digimons:hover {
+  width: 70%;
+}
+.navigation__bar-digimons:hover .navigation__bar-digimons-image {
+  animation: grow 2s forwards;
+  background: radial-gradient(closest-side, #fff, #99000000);
+}
+.navigation__bar-digimons:hover .navigation__bar-digimons-text {
+  margin-top: 60px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}

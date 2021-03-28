@@ -34,6 +34,11 @@
       "name": "dddd",
       "description": "eee",
       "id": 7
+    },
+    {
+      "name": "Boze",
+      "description": "Boze moze letit",
+      "id": 8
     }
   ],
   "digimon": [
@@ -46,6 +51,11 @@
       "name": "Hello",
       "description": "alo",
       "id": 2
+    },
+    {
+      "name": "Weeee",
+      "description": "Wiiii",
+      "id": 3
     }
   ]
 }

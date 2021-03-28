@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../Styling/pokemonForm.css';
 
 
 const PokemonForm = ({ onSubmit, pokemon }) =>  {
@@ -20,12 +21,14 @@ const PokemonForm = ({ onSubmit, pokemon }) =>  {
     }
 
     return ( 
-    <div>
-        <label>Enter a new name for your pokemon:</label>
-        <input value={name} onChange={handleChange(setName)} />
-        <label>Give your new pokemon some description:</label>
-        <input value={description} onChange={handleChange(setDescription)} />
-        <button onClick={handleSubmit}>Submit</button>
+    <div className = "pokemon__form">
+        <div className = "pokemon__form-container">
+            <label>Enter a new name for your pokemon:</label>
+            <input value={name} onChange={handleChange(setName)} />
+            <label>Give your new pokemon some description:</label>
+            <input value={description} onChange={handleChange(setDescription)} />
+            <button onClick={handleSubmit}>Submit</button>
+        </div>
     </div>
     )
 }

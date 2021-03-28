@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.digimon__form {
+  background-color: rgba(223, 207, 190, 0.322);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digimon__form-container {
+  background: white;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.digimon__form-container label {
+  margin-top: 15px;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.digimon__form-container input {
+  margin-top: 10px;
+}
+
+.digimon__form-container button {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+
+.digimon__form-container button:active {
+  transform: translateY(4px);
+}

@@ -3,6 +3,7 @@ import Loading from '../Loading';
 import { useParams } from 'react-router';
 import { fetchDigimonDetails } from '../../data';
 import { Redirect, Link } from 'react-router-dom';
+import '../../Styling/digimonDetails.css';
 
 const DigimonDetails = () => {
     const params = useParams();
@@ -24,16 +25,20 @@ const DigimonDetails = () => {
         return <Loading />
     }
     return ( 
-        <div>
-            <h3>Digidex: {digimon.id}</h3>
-            <p>Name: {digimon.name}</p>
-            <p>Description: {digimon.description}</p>
-            <Link to={`/digimon/edit/${digimon.id}`}>
-                <button>Update</button>
-            </Link>
-            <Link to={`/digimon/delete/${digimon.id}`}>
-                <button>Delete</button>
-            </Link>
+        <div className = "digimon__details">
+            <div className = "digimon__details-container">
+                <h2>Digidex: {digimon.id}</h2>
+                <h3>Name: {digimon.name}</h3>
+                <p>Description: {digimon.description}</p>
+                <div className = "digimon__details-button-container">
+                    <Link to={`/digimon/edit/${digimon.id}`}>
+                        <button>Update</button>
+                    </Link>
+                    <Link to={`/digimon/delete/${digimon.id}`}>
+                        <button>Delete</button>
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }

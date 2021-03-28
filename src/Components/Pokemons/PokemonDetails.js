@@ -3,6 +3,7 @@ import Loading from '../Loading';
 import { useParams } from 'react-router';
 import { fetchPokemonDetails } from '../../data';
 import { Redirect, Link } from 'react-router-dom';
+import '../../Styling/pokemonDetails.css';
 
 const PokemonDetails = () => {
     const params = useParams();
@@ -24,16 +25,20 @@ const PokemonDetails = () => {
         return <Loading />
     }
     return ( 
-        <div>
-            <h3>Pokedex: {pokemon.id}</h3>
-            <p>Name: {pokemon.name}</p>
-            <p>Description: {pokemon.description}</p>
-            <Link to={`/pokemon/edit/${pokemon.id}`}>
-                <button>Update</button>
-            </Link>
-            <Link to={`/pokemon/delete/${pokemon.id}`}>
-                <button>Delete</button>
-            </Link>
+        <div className = "pokemon__details">
+            <div className = "pokemon__details-container">
+                <h2>Pokedex: {pokemon.id}</h2>
+                <h3>Name: {pokemon.name}</h3>
+                <p>Description: {pokemon.description}</p>
+                <div className = "pokemon__details-button-container">
+                    <Link to={`/pokemon/edit/${pokemon.id}`}>
+                        <button>Update</button>
+                    </Link>
+                    <Link to={`/pokemon/delete/${pokemon.id}`}>
+                        <button>Delete</button>
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,15 +1,15 @@
 export const fetchPokemons = () => 
-    fetch("http://localhost:3000/pokemons").then((response) => {
+    fetch("http://localhost:3000/pokemon").then((response) => {
         return response.json();
     });
 
 export const fetchPokemonDetails = (pokemonId) => 
-    fetch(`http://localhost:3000/pokemons/${pokemonId}`).then((response) => {
+    fetch(`http://localhost:3000/pokemon/${pokemonId}`).then((response) => {
         return response.json();
     })
 
 export const createPokemon = (pokemon) => 
-    fetch("http://localhost:3000/pokemons", {
+    fetch("http://localhost:3000/pokemon", {
         method: "POST",
         body: JSON.stringify(pokemon),
         headers: {
@@ -18,7 +18,7 @@ export const createPokemon = (pokemon) =>
     }).then((response) => response.json());
 
 export const updatePokemon = (pokemon) => 
-    fetch(`http://localhost:3000/pokemons/${pokemon.id}`, {
+    fetch(`http://localhost:3000/pokemon/${pokemon.id}`, {
         method: "PUT",
         body: JSON.stringify(pokemon),
         headers: {
@@ -27,7 +27,7 @@ export const updatePokemon = (pokemon) =>
     }).then((response) => response.json());
 
 export const deletePokemon = (pokemon) => 
-    fetch(`http://localhost:3000/pokemons/${pokemon.id}`, {
+    fetch(`http://localhost:3000/pokemon/${pokemon.id}`, {
         method: "DELETE",
         body: JSON.stringify(pokemon),
         headers: {
@@ -36,17 +36,17 @@ export const deletePokemon = (pokemon) =>
     }).then((response) => response.json());
 
 export const fetchDigimons = () => 
-    fetch("http://localhost:3000/digimons").then((response) => {
+    fetch("http://localhost:3000/digimon").then((response) => {
         return response.json();
     });
 
 export const fetchDigimonDetails = (digimonId) => 
-    fetch(`http://localhost:3000/digimons/${digimonId}`).then((response) => {
+    fetch(`http://localhost:3000/digimon/${digimonId}`).then((response) => {
         return response.json();
     })
 
 export const createDigimon = (digimon) => 
-    fetch("http://localhost:3000/digimons", {
+    fetch("http://localhost:3000/digimon", {
         method: "POST",
         body: JSON.stringify(digimon),
         headers: {
@@ -55,7 +55,7 @@ export const createDigimon = (digimon) =>
     }).then((response) => response.json());
 
 export const updateDigimon = (digimon) => 
-    fetch(`http://localhost:3000/digimons/${digimon.id}`, {
+    fetch(`http://localhost:3000/digimon/${digimon.id}`, {
         method: "PUT",
         body: JSON.stringify(digimon),
         headers: {
@@ -64,7 +64,7 @@ export const updateDigimon = (digimon) =>
     }).then((response) => response.json());
 
 export const deleteDigimon = (digimon) => 
-    fetch(`http://localhost:3000/digimons/${digimon.id}`, {
+    fetch(`http://localhost:3000/digimon/${digimon.id}`, {
         method: "DELETE",
         body: JSON.stringify(digimon),
         headers: {

@@ -8,7 +8,7 @@ import DigimonDelete from './DigimonDelete';
 
 const Pokemons = () => {
     return <Switch>
-        <Route exact path="/digimons">
+        <Route exact path="/digimon">
             <DigimonList />
         </Route>
         <Route exact path="/digimon/add">

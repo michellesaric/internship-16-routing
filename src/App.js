@@ -13,13 +13,13 @@ const App = () => {
             <Route exact path="/">
                 <NavigationPage /> 
             </Route>
-            <Route path="/pokemons">
+            <Route path="/pokemon">
                 <Pokemons />
             </Route>
-            <Route path="/digimons">
+            <Route path="/digimon">
                 <Digimons />
             </Route>
-            <Route path="/404">
+            <Route exact path="/404">
                 <NotFound />
             </Route>
             <Redirect to="/404"/>

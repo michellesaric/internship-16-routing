@@ -1,16 +1,51 @@
 {
-  "pokemons": [
+  "pokemon": [
     {
       "id": 1,
-      "name": "Pikachu",
-      "description": "thunder pokemon"
+      "name": "Mars",
+      "description": "ubij se"
+    },
+    {
+      "name": "Boze se zovem ja",
+      "description": "moze letit",
+      "id": 2
+    },
+    {
+      "name": "Lucia",
+      "description": "jako plače",
+      "id": 3
+    },
+    {
+      "name": "Belas",
+      "description": "kritikuje",
+      "id": 4
+    },
+    {
+      "name": "marina",
+      "description": "nosi dobru robu",
+      "id": 5
+    },
+    {
+      "name": "sdfg",
+      "description": "edvs",
+      "id": 6
+    },
+    {
+      "name": "dddd",
+      "description": "eee",
+      "id": 7
     }
   ],
-  "digimons": [
+  "digimon": [
     {
       "id": 1,
       "name": "Agumon",
       "description": "Very strong digimon"
+    },
+    {
+      "name": "Hello",
+      "description": "alo",
+      "id": 2
     }
   ]
 }

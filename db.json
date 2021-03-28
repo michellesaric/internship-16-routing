@@ -1,0 +1,16 @@
+{
+  "pokemons": [
+    {
+      "id": 1,
+      "name": "Pikachu",
+      "description": "thunder pokemon"
+    }
+  ],
+  "digimons": [
+    {
+      "id": 1,
+      "name": "Agumon",
+      "description": "Very strong digimon"
+    }
+  ]
+}

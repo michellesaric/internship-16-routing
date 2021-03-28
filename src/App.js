@@ -1,8 +1,8 @@
 import React from 'react';
-import NavigationPage from './Components/NavigationPage';
+import PokemonList from './Components/Pokemons/PokemonList';
 
 const App = () => {
-    return <NavigationPage />
+    return <PokemonList />
 }
 
 export default App;

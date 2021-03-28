@@ -46,10 +46,12 @@
 
 .navigation__bar-digimons-text {
   color: lightskyblue;
+  text-decoration: none;
 }
 
 .navigation__bar-pokemons-text {
   color: #feae96;
+  text-decoration: none;
 }
 
 .navigation__bar-pokemons:hover {

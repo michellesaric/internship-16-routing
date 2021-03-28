@@ -1,8 +1,31 @@
 import React from 'react';
-import PokemonList from './Components/Pokemons/PokemonList';
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+
+import NavigationPage from './Components/NavigationPage';
+import NotFound from './Components/NotFound';
+import Pokemons from './Components/Pokemons';
+import Digimons from './Components/Digimons';
 
 const App = () => {
-    return <PokemonList />
+    return (
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/">
+                <NavigationPage /> 
+            </Route>
+            <Route path="/pokemons">
+                <Pokemons />
+            </Route>
+            <Route path="/digimons">
+                <Digimons />
+            </Route>
+            <Route path="/404">
+                <NotFound />
+            </Route>
+            <Redirect to="/404"/>
+        </Switch>
+    </BrowserRouter>
+    )
 }
 
 export default App;

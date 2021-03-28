@@ -35,7 +35,7 @@ const PokemonList = () =>  {
         <div className = "pokemon__list-display">
             {pokemons.map((pokemon) => (
         <div key={pokemon.id} className = "pokemon__list-display-details">
-            <Link className = "wrapper" to={`/pokemon/${pokemon.id}`}>
+            <Link className = "pokemon__list-display-details-wrapper" to={`/pokemon/${pokemon.id}`}>
                 <h3>Pokedex.{pokemon.id}</h3>
                 <h2>{pokemon.name}</h2>
                 <p>{pokemon.description}</p>

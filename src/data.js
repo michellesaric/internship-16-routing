@@ -65,9 +65,5 @@ export const updateDigimon = (digimon) =>
 
 export const deleteDigimon = (digimon) => 
     fetch(`http://localhost:3000/digimon/${digimon.id}`, {
-        method: "DELETE",
-        body: JSON.stringify(digimon),
-        headers: {
-            "Content-Type": "application/json",
-        },
+        method: "DELETE"
     }).then((response) => response.json());
